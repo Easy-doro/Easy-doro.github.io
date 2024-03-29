@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Vladimir Bleskine - Portfolio</title>
+    <link rel="icon" type="image/png" href="/img/Photo.png"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a class="selected" href="#">Portfolio</a>
+            <a href="Projects.html">Projects</a>
+            <a href="AboutMe.html">About me</a>
+        </div>
+    </header>
+    <main>
+            <h1>Hi,</h1>
+            <h1>My name is</h1>
+            <h1 class="vladcolor">Vladimir Bleskine</h1>
+            <div class="keywords">
+                <h3>Design</h3>
+                <h3>Web</h3>
+                <h3>3D</h3>
+                <h3>Music</h3>
+                <h3>Game design</h3>
+            </div>
+    </main>
+        <div class="flex-column gallery">
+            <ol>
+            <li><img src="/img/image1.jpg" alt=""></li>
+            <li><img src="/img/image1.jpg" alt=""></li>
+            <li><img src="/img/image1.jpg" alt=""></li>
+            <li><img src="/img/image1.jpg" alt=""></li>
+            <li><img src="/img/image1.jpg" alt=""></li>
+            <li><img src="/img/image1.jpg" alt=""></li>
+            </ol>
+        </div>
+        <a href="#" id="topBtn">Back to top</a>
+    </main>
+    <script>
+        // Fonction pour afficher ou masquer le bouton "Back to top" en fonction de la position de défilement
+        function toggleBackToTopButton() {
+            var topBtn = document.getElementById("topBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        }
+
+        // Ajoutez un écouteur d'événements pour déclencher la fonction lorsque l'utilisateur fait défiler la page
+        window.onscroll = function() {
+            toggleBackToTopButton();
+        };
+
+        // Déclenchez la fonction une fois au chargement de la page pour vérifier l'état initial
+        toggleBackToTopButton();
+
+        // Fonction pour vérifier si un élément est visible dans la fenêtre
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Fonction pour vérifier si un élément est visible dans la fenêtre
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Fonction pour animer les images lorsqu'elles deviennent visibles
+        function animateOnScroll() {
+            var galleryImages = document.querySelectorAll('.gallery img');
+            
+            galleryImages.forEach(function(image) {
+                if (isElementInViewport(image) && !image.classList.contains('animate')) {
+                    // Ajoutez une classe pour marquer l'image comme animée
+                    image.classList.add('animate');
+                    // Réglez la propriété CSS pour que l'image reste à sa position finale
+                    image.style.opacity = 1;
+                    image.style.marginLeft = '0%';
+                }
+            });
+        }
+
+        // Écouteur d'événements pour déclencher l'animation au défilement de la page
+        window.addEventListener('scroll', function() {
+            // Déclencher l'animation une seule fois au chargement de la page pour les images initialement visibles
+            animateOnScroll();
+        });
+
+        // Déclencher l'animation une fois au chargement de la page pour les images initialement visibles
+        animateOnScroll();
+    </script>
+</body>
+</html>

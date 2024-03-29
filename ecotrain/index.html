@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Trains écologiques - Home</title>
+</head>
+<body>
+    <div class="header">
+        <h4>LOGO</h4>
+        <div>
+            <a class="selected" href="">Home</a>
+            <a class="nav-item" href="voyage.html">Voyage</a>
+            <a class="nav-item" href="">Offres</a>
+            <a class="nav-item"  href="">Billets</a>
+            <a class="nav-item"  href="">Compte</a>
+            <a class="btn-0"  href="">Créer Compte</a>
+        </div>
+    </div>
+    <div class="page">
+        <img class="center mainref" src="img/train.png" alt="Train">
+        <div class="flex main">
+            <div class="trajet">
+                <h3>Rechercher un Trajet</h3>
+                <div class="searchbar flex">
+                    <label>Rechercher un Trajet...</label>
+                    <img src="img/loupe.png" alt="Search">
+                </div>
+                <div class="flex gare superwidth">
+                    <div class="coolwidth">
+                    <p class="bluegreen flex" id="depart">Départ</p>
+                    </div>
+                    <img src="img/fleche.png" alt="Flèches" id="arrows" onclick="changeArriveeDepart()">
+                    <div class="coolwidth">
+                        <p class="bluegreen flex" id="arrivee">Arrivée</p>
+                    </div>
+                </div>
+                <div class="flex superwidth">
+                    <div class="flex heure coolwidth">
+                        <p class="yellow flex">Heure de départ :</p>
+                        <p>12</p>
+                        <p>h</p>
+                        <p>55</p>
+                    </div>
+                    <div class="flex heure coolwidth">
+                        <p class="yellow flex">Heure d'arrivée :</p>
+                        <p>12</p>
+                        <p>h</p>
+                        <p>56</p>
+                    </div>
+                </div>
+            </div>
+            <div class="date">
+                <h3>Rechercher une Date</h3>
+                <img src="img/calendrier.png" alt="Calendrier">
+            </div>
+        </div>
+        <div class="flex main wp bloc-1">
+            <div class="flex-column">
+                <div class="flex">
+                    <div class="co2 flex-column">
+                        <h3 style="padding-left: 10px;">Indice carbone de mon Trajet</h3>
+                        <div class="flex center">
+                            <div class="rond center flex">
+                                <h2>4,20 kg</h2>
+                            </div>
+                            <div class="flex-column center">
+                                <img src="img/pictogramme.png" alt="Pictogramme écologie">
+                                <p>de CO2</p>
+                            </div>
+                        </div>
+                        <div class="btn-1 flex center">
+                            <a>Nos Valeurs</a>
+                        </div>
+                        <div class="btn-1 flex center">
+                            <a>A Propos</a>
+                        </div>
+                    </div>
+                    <div class="paragraphe">
+                        <h2>Voyager en train c’est en moyenne 90% de CO2 en moins qu’un voyage en avion ou en voiture.</h2>
+                        <p>L'empreinte CO2 est la mesure de la quantité de dioxyde de carbone (CO2) émis, suite à la combustion d'énergies fossiles, par une activité, un produit (depuis quelques années cette information est disponible sur l'électroménager, les offres immobilières, les véhicules), une prestation.</p>
+                    </div>
+                </div>
+                <div class="flex-column offre-h">
+                    <h3>Nouvelles Offres</h3>
+                    <div class="offre flex">
+                        <img src="img/offre1.png" alt="Offre voyage">
+                        <img src="img/offre2.png" alt="Offre voyage">
+                        <img src="img/offre3.png" alt="Offre voyage">
+                    </div>
+                </div>
+                <div class="flex bloc-2">
+                    <div class="flex-column paragraphe-2">
+                        <div class="btn-2 flex center">
+                            <a>Nos valeurs</a>
+                        </div>
+                        <h2>Engageons-nous pour des trajets plus propres!</h2>
+                        <p>En s'informant des émissions de CO2e de nos trajets, choisissons le mode de transport le plus respectueux de l'environnement et contribuons à la lutte contre le changement climatique.</p>
+                        <p>En savoir plus</p>
+                    </div>
+                    <div class="flex-column paragraphe-2">
+                        <div class="btn-2 flex center">
+                            <a>A Propos</a>
+                        </div>
+                        <h2>Voyager en train c’est en moyenne 90% de CO2 en moins qu’un voyage en avion ou en voiture.</h2>
+                        <p>L'empreinte CO2 est la mesure de la quantité de dioxyde de carbone (CO2) émis, suite à la combustion d'énergies fossiles, par une activité, un produit (depuis quelques années cette information est disponible sur l'électroménager, les offres immobilières, les véhicules), une prestation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tapbar">
+        <a class="selected" href="index.html">Home</a>
+        <a class="nav-item" href="voyage.html">Voyage</a>
+        <a class="nav-item" href="">Offres</a>
+        <a class="nav-item"  href="">Billets</a>
+        <a class="nav-item"  href="">Compte</a>
+    </div>
+    <div class="footer flex">
+        <div class="flex-column">
+            <h3>L'entreprise</h3>
+            <a href="">Informations légales</a>
+            <a href="">Charte de confidentialité</a>
+            <a href="">Gestion des cookies</a>
+        </div>
+        <div class="flex-column">
+            <h3>Nos engagements</h3>
+            <a href="">Meilleurs prix garantis</a>
+            <a href="">Paiement sécurisé</a>
+            <a href="">Contact 7j/7</a>
+            <a href="">Voyage éco-responsable</a>
+        </div>
+        <div class="flex-column">
+            <h3>Vous informer</h3>
+            <a href="">Aide</a>
+            <a href="">Contactez-nous</a>
+            <a href="">Vos billets</a>
+        </div>
+        <div class="flex-column">
+            <h3>Voyageurs handicapés</h3>
+            <a href="">Accessibilité : Conformité partielle</a>
+            <a href="">Billets de train personnes handicapées</a>
+            <a href="">Accès plus</a>
+        </div>
+    </div>
+
+    <script>
+        let titles = document.getElementsByTagName('h2');
+        for (let title of titles) {
+            title.addEventListener('click', (event) => {
+                event.target.classList.add("test-clic");
+                console.log(event.target.className);
+            });
+        }
+
+        const depart = document.getElementById('depart');
+        const arrivee = document.getElementById('arrivee');
+    
+        function changeArriveeDepart(){
+            const temp = depart.innerText;
+            depart.innerText = arrivee.innerText;
+            arrivee.innerText = temp;
+        }
+
+        document.getElementById('arrows').addEventListener('onClick', changeArriveeDepart);
+    </script>
+</body>
+</html>

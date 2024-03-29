@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Trains écologiques - Voyage</title>
+</head>
+<body>
+    <div class="header">
+        <h4>LOGO</h4>
+        <div>
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="selected" href="">Voyage</a>
+            <a class="nav-item" href="">Offres</a>
+            <a class="nav-item"  href="">Billets</a>
+            <a class="nav-item"  href="">Compte</a>
+            <a class="btn-0"  href="">Créer Compte</a>
+        </div>
+    </div>
+    <div class="page">
+        <div class="flex bloc1">
+            <div class="carte"></div>
+            <div class="flex-column">
+                <h2 style="color: #EAF597;">Mon train en direct</h2>
+                <div class="flex">
+                    <div class="flex-column direct">
+                        <select id="arret-terminus">
+                        <option value="prochain-arret">Prochain arrêt</option>
+                        <option value="ma-destination">Ma Destination</option>
+                        <option value="terminus">Terminus</option>
+                        </select>
+                        <h3 id="gare">Troyes</h3>
+                        <p id="temps-restant">20 min</p>
+                        <div class="flex" style="align-items: center;">
+                            <img src="img/attention.png" alt="Attention">
+                            <h4>Perturbations sur le trajet</h4>
+                        </div>
+                    </div>
+                    <div class="flex-column direct">
+                        <select id="arret-terminus2">
+                        <option value="prochain-arret">Prochain arrêt</option>
+                        <option value="ma-destination">Ma Destination</option>
+                        <option value="terminus">Terminus</option>
+                        </select>
+                        <h3 id="gare2">Paris-Est</h3>
+                        <p id="temps-restant2">45 min</p>
+                        <div class="flex" style="align-items: center;">
+                            <img src="img/attention.png" alt="Attention">
+                            <h4>Perturbations sur le trajet</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex bloc2">
+            <div class="flex-column paragraphe">
+                <h2>Engageons-nous pour des trajets plus propres!</h2>
+                <p>En s'informant des émissions de CO2e de nos trajets, choisissons le mode de transport le plus respectueux de l'environnement et contribuons à la lutte contre le changement climatique.</p>
+                <p>En savoir plus</p>
+                <h2>Voyager en train c’est en moyenne 90% de CO2 en moins qu’un voyage en avion ou en voiture.</h2>
+                <p>L'empreinte CO2 est la mesure de la quantité de dioxyde de carbone (CO2) émis, suite à la combustion d'énergies fossiles, par une activité, un produit (depuis quelques années cette information est disponible sur l'électroménager, les offres immobilières, les véhicules), une prestation.</p>
+            </div>
+            <div class="flex-column ami">
+                <div class="flex profil-ami">
+                    <img src="img/femme.jpg" alt="Photo de Profil">
+                    <div class="notif flex">
+                        <p>1</p>
+                    </div>
+                </div>
+                <p>1 Ami dans le Train</p>
+                <a href="" class="yellowdetail">Voir la position d'un ami</a>
+                <a href="" class="yellowdetail">Ajouter un ami</a>
+            </div>
+            <div class="flex-column">
+                <h2 style="color: #EAF597;">Plan du Train en Direct</h2>
+                <img src="img/livetrain.png" alt="Plan du Train en Direct">
+            </div>
+        </div>
+    </div>
+    <div class="forme"></div>
+    <div class="tapbar">
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="selected" href="voyage.html">Voyage</a>
+        <a class="nav-item" href="">Offres</a>
+        <a class="nav-item"  href="">Billets</a>
+        <a class="nav-item"  href="">Compte</a>
+    </div>
+    <div class="footer flex">
+        <div class="flex-column">
+            <h3>L'entreprise</h3>
+            <a href="">Informations légales</a>
+            <a href="">Charte de confidentialité</a>
+            <a href="">Gestion des cookies</a>
+        </div>
+        <div class="flex-column">
+            <h3>Nos engagements</h3>
+            <a href="">Meilleurs prix garantis</a>
+            <a href="">Paiement sécurisé</a>
+            <a href="">Contact 7j/7</a>
+            <a href="">Voyage éco-responsable</a>
+        </div>
+        <div class="flex-column">
+            <h3>Vous informer</h3>
+            <a href="">Aide</a>
+            <a href="">Contactez-nous</a>
+            <a href="">Vos billets</a>
+        </div>
+        <div class="flex-column">
+            <h3>Voyageurs handicapés</h3>
+            <a href="">Accessibilité : Conformité partielle</a>
+            <a href="">Billets de train personnes handicapées</a>
+            <a href="">Accès plus</a>
+        </div>
+    </div>
+
+    <script>
+        let titles = document.getElementsByTagName('h2');
+        for (let title of titles) {
+            title.addEventListener('click', (event) => {
+                event.target.classList.add("test-clic");
+                console.log(event.target.className);
+            });
+        }
+        
+        let selectElement = document.getElementById('arret-terminus');
+        let gareElement = document.getElementById('gare');
+        let tempsRestantElement = document.getElementById('temps-restant');
+
+        console.log(gareElement);
+        
+        selectElement.addEventListener('change', () => {
+            console.log('test')
+            const selectedValue = selectElement.value;
+            const gares = ["Paris-Est", "Nogent-sur-Seine","Romilly-sur-Seine","Troyes"];
+            const tempsRestant = [15, 30, 45, 20];
+
+            if (selectedValue === 'prochain-arret') {
+                gareElement.textContent = gares[3];
+                tempsRestantElement.textContent = tempsRestant[3] + ' min';
+            }   else if (selectedValue === 'ma-destination') {
+                gareElement.textContent = gares[1];
+                tempsRestantElement.textContent = tempsRestant[1] + ' min';
+            }   else {
+                gareElement.textContent = gares[0];
+                tempsRestantElement.textContent = tempsRestant[2] + ' min';
+        }});
+
+        let select2Element = document.getElementById('arret-terminus2');
+        let gare2Element = document.getElementById('gare2');
+        let tempsRestant2Element = document.getElementById('temps-restant2');
+
+        console.log(gare2Element);
+        
+        select2Element.addEventListener('change', () => {
+            console.log('test')
+            const selectedValue = select2Element.value;
+            const gares2 = ["Paris-Est", "Nogent-sur-Seine","Romilly-sur-Seine","Troyes"];
+            const tempsRestant2 = [15, 30, 45, 20];
+
+            if (selectedValue === 'prochain-arret') {
+                gare2Element.textContent = gares2[3];
+                tempsRestant2Element.textContent = tempsRestant2[3] + ' min';
+            }   else if (selectedValue === 'ma-destination') {
+                gare2Element.textContent = gares2[1];
+                tempsRestant2Element.textContent = tempsRestant2[1] + ' min';
+            }   else {
+                gare2Element.textContent = gares2[0];
+                tempsRestant2Element.textContent = tempsRestant2[2] + ' min';
+        }});
+    </script>
+    
+</body>
+</html>
