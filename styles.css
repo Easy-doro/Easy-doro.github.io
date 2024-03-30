@@ -433,6 +433,10 @@ ul {
     background-image: url(img/render_ecole.png);
 }
 
+.aiharmony {
+    background-image: url(img/moovproject.png);
+}
+
 #topBtn {
     position: sticky;
     bottom: 10px;
