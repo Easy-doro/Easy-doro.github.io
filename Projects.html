@@ -22,6 +22,16 @@
             </div>
         </div>
     </div>
+    <div id="g">
+        <h1>AI HARMONY</h1>
+        <h2>App Design</h2>
+        <div class="flex" style="width: 100%; height: 450px; align-items: center;">
+            <div class="flex-column center banner aiharmony">
+                <a href="AiHarmony.html" class="btn-disco">DISCOVER</a>
+                <h1 style="color: #fff; text-shadow: #565656 1px 1px 2px; z-index: 2;">2024</h1>
+            </div>
+        </div>
+    </div>
     <div id="e" style="display: none;">
         <h1>Ghost Writer</h1>
         <h2>Song writing app</h2>
@@ -34,7 +44,7 @@
     </div>
     <div id="a" style="display: none;">
         <h1>Edison and the Frog</h1>
-        <h2>Game Design </h2>
+        <h2>Game Design</h2>
         <div class="flex" style="width: 100%; height: 450px; align-items: center;">
             <div class="flex-column center banner frog">
                 <a href="Game.html" class="btn-disco">DISCOVER</a>
@@ -76,6 +86,8 @@
         <ul class="tapbar flex">
             <label for="fCheck"><img src="/img/render_ecole.png" alt="JPO 2024"></label>
             <li><input type="radio" id="fCheck" name="p" onchange="affiche_blocf()"></li>
+            <label for="gCheck"><img src="/img/aiharmony.png" alt="AI Harmony"></label>
+            <li><input type="radio" id="gCheck" name="p" onchange="affiche_blocg(gCheck)"></li>
             <label for="eCheck"><img src="/img/ghostwriterlogo.jpg" alt="Ghost Writer"></label>
             <li><input type="radio" id="eCheck" name="p" onchange="affiche_bloce(eCheck)"></li>
             <label for="aCheck"><img src="/img/frog.png" alt="Edison and the Frog"></label>
@@ -97,6 +109,7 @@
             document.getElementById("d").style.display = "none";
             document.getElementById("e").style.display = "none";
             document.getElementById("f").style.display = "none";
+            document.getElementById("g").style.display = "none";
         }
         function affiche_blocb(bCheck) {
             document.getElementById("a").style.display = "none";
@@ -105,6 +118,7 @@
             document.getElementById("d").style.display = "none";
             document.getElementById("e").style.display = "none";
             document.getElementById("f").style.display = "none";
+            document.getElementById("g").style.display = "none";
         }
         function affiche_blocc(cCheck) {
             document.getElementById("a").style.display = "none";
@@ -113,6 +127,7 @@
             document.getElementById("d").style.display = "none";
             document.getElementById("e").style.display = "none";
             document.getElementById("f").style.display = "none";
+            document.getElementById("g").style.display = "none";
         }
         function affiche_blocd(dCheck) {
             document.getElementById("a").style.display = "none";
@@ -121,6 +136,7 @@
             document.getElementById("d").style.display = "block";
             document.getElementById("e").style.display = "none";
             document.getElementById("f").style.display = "none";
+            document.getElementById("g").style.display = "none";
         }
         function affiche_bloce(eCheck) {
             document.getElementById("a").style.display = "none";
@@ -129,6 +145,7 @@
             document.getElementById("d").style.display = "none";
             document.getElementById("e").style.display = "block";
             document.getElementById("f").style.display = "none";
+            document.getElementById("g").style.display = "none";
         }
         function affiche_blocf(fCheck) {
             document.getElementById("a").style.display = "none";
@@ -137,6 +154,16 @@
             document.getElementById("d").style.display = "none";
             document.getElementById("e").style.display = "none";
             document.getElementById("f").style.display = "block";
+            document.getElementById("g").style.display = "none";
+        }
+        function affiche_blocf(gCheck) {
+            document.getElementById("a").style.display = "none";
+            document.getElementById("b").style.display = "none";
+            document.getElementById("c").style.display = "none";
+            document.getElementById("d").style.display = "none";
+            document.getElementById("e").style.display = "none";
+            document.getElementById("f").style.display = "none";
+            document.getElementById("g").style.display = "block";
         }
     </script>
 </body>
