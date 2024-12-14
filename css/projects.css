@@ -146,7 +146,7 @@ details ul li img {
     transition: all 0.5s;
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 768px){
     .project-details {
         text-align: start;
         margin-left: 5%;
