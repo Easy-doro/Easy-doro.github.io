@@ -179,6 +179,7 @@
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
         gap: 0;
+        margin-top: 64px;
     }
 
     .skills::-webkit-scrollbar {
