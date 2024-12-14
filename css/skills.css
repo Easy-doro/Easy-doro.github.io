@@ -86,8 +86,8 @@
 }
 
 .icon img {
-    width: 56px;
-    height: 56px;
+    width: 128px;
+    height: 128px;
 }
 
 .rating {
@@ -100,8 +100,8 @@
 }
 
 .rating img{
-    width: 24px;
-    height: 24px;
+    width: 44px;
+    height: 44px;
 }
 
 @media screen and (min-width: 992px){
@@ -153,6 +153,11 @@
         height: 44px;
     }
     
+    .rating img{
+        width: 24px;
+        height: 24px;
+    }
+    
     .skill span {
         position:absolute;
         margin-bottom:80px;
@@ -195,13 +200,13 @@
     }
 
     .skill h3 {
-        font-size: 20px;
+        font-size: 32px;
     }
 
     .skill span {
         position: static;
         transform: scale(1);
         max-width: 50%;
-        font-size: 18px;
+        font-size: 28px;
     }
 }
