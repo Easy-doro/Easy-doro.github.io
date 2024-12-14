@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Vladimir Bleskine - Portfolio</title>
+    <link rel="icon" type="image/png" href="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <label>
+          <input type="radio" name="nav" data-url="index.html">
+          <span>Portfolio</span>
+        </label>
+        <label>
+            <input type="radio" name="nav" data-url="projects.html" checked>
+            <span>Projects</span>
+        </label>
+        <label>
+          <input type="radio" name="nav" data-url="aboutme.html">
+          <span>About Me</span>
+        </label>
+      </div>
+      <script src="js/navbar.js"></script>
+  </header>
+  <main>
+    <div id="p1">
+      <div class="project-details">
+        <h1>Open days</h1>
+        <h3>3D modeling of the school for presentation animation</h3>
+        <h3>2024</h3>
+      </div>
+      <div class="banner">
+        <a href="projects/open-days.html">
+          <div class="discoverBtn">
+            <div>
+              <p>Tap to</p>
+              <p>Discover</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div id="p2">
+      <div class="project-details">
+        <h1>Edison and the frog</h1>
+        <h3>2D video game I started creating on my free time</h3>
+        <h3>WIP</h3>
+      </div>
+      <div class="banner">
+        <a href="projects/edison-and-the-frog.html">
+          <div class="discoverBtn">
+            <div>
+              <p>Tap to</p>
+              <p>Discover</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div id="p3">
+      <div class="project-details">
+        <h1>Hoodie illustration</h1>
+        <h3>Illustration for a hoodie in a design competition at my high school</h3>
+        <h3>2022</h3>
+      </div>
+      <div class="banner">
+        <a href="projects/hoodie-illustration.html">
+          <div class="discoverBtn">
+            <div>
+              <p>Tap to</p>
+              <p>Discover</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div id="p4">
+      <div class="project-details">
+        <h1>Moov</h1>
+        <h3>App design for festival goers</h3>
+        <h3>2023</h3>
+      </div>
+      <div class="banner">
+        <a href="projects/moov.html">
+          <div class="discoverBtn">
+            <div>
+              <p>Tap to</p>
+              <p>Discover</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div id="p5">
+      <div class="project-details">
+        <h1>Ai harmony</h1>
+        <h3>Design of a mood playlist generator app and development of local storage functionalities</h3>
+        <h3>2024</h3>
+      </div>
+      <div class="banner">
+          <a href="projects/ai-harmony.html">
+            <div class="discoverBtn">
+              <div>
+                <p>Tap to</p>
+                <p>Discover</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="p6">
+        <div class="project-details">
+          <h1>Doctolib redesign</h1>
+          <h3>Redesign of the doctolib app and adding of a delay prevention feature</h3>
+          <h3>2024</h3>
+        </div>
+        <div class="banner">
+          <a href="projects/doctolib-redesign.html">
+            <div class="discoverBtn">
+              <div>
+                <p>Tap to</p>
+                <p>Discover</p>
+              </div>
+            </div>
+          </a>
+        </div>
+    </div>
+    <details id="details-section">
+      <summary>Find out my other creations</summary>
+      <ul>
+        <li>
+          <label for="p1check">
+            <input type="radio" checked id="p1check" name="p" onchange="display_p1()">
+            <img src="img/icon_opendays.webp" alt="Open days logo">
+            <span>3D animation</span>
+          </label>
+        </li>
+        <li>
+          <label for="p2check">
+            <input type="radio" id="p2check" name="p" onchange="display_p2()">
+            <img src="img/icon_edison.jpg" alt="Edison logo">
+            <span>Game design</span>
+          </label>
+        </li>
+        <li>
+          <label for="p3check">
+            <input type="radio" id="p3check" name="p" onchange="display_p3()">
+            <img src="img/icon_hoodie.png" alt="Hoodie illustration">
+            <span>Hoodie illustration</span>
+          </label>
+        </li>
+        <li>
+          <label for="p4check">
+            <input type="radio" id="p4check" name="p" onchange="display_p4()">
+            <img src="img/icon_moov.png" alt="Moov logo">
+            <span>App design</span>
+          </label>
+        </li>
+        <li>
+          <label for="p5check">
+            <input type="radio" id="p5check" name="p" onchange="display_p5()">
+            <img src="img/icon_harmony.png" alt="AI Harmony logo">
+            <span>App dev</span>
+          </label>
+        </li>
+        <li>
+          <label for="p6check">
+            <input type="radio" id="p6check" name="p" onchange="display_p6()">
+            <img src="img/icon_doctolib.jpg" alt="Doctolib logo">
+            <span>Doctolib redesign</span>
+          </label>
+        </li>
+      </ul>
+    </details>
+  </main>
+  <script src="/js/projectselect.js"></script>
+</body>
+</html>
