@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const skills = document.querySelector('.skills');
 
     // Activer un slider uniquement sur mobile
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 992) {
         skills.scrollLeft = 0; // Forcer le scroll initial à 0
 
         let isDown = false;
