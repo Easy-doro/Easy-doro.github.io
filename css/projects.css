@@ -33,7 +33,7 @@ h3 {
     animation: scrollimg-x;
 }
 
-.banner {
+#banner {
     width: 100%;
     height: 600px;
     background-size: cover;
@@ -41,27 +41,27 @@ h3 {
     animation: all 4s infinite;
 }
 
-#p1 .banner {
+#p1 #banner {
     background-image: url(/img/banner_opendays.png);
 }
 
-#p2 .banner {
+#p2 #banner {
     background-image: url(/img/banner_edison.jpg);
 }
 
-#p3 .banner {
+#p3 #banner {
     background-image: url(/img/banner_hoodie.jpg);
 }
 
-#p4 .banner {
+#p4 #banner {
     background-image: url(/img/banner_moov.png);
 }
 
-#p5 .banner {
+#p5 #banner {
     background-image: url(/img/banner_harmony.jpg);
 }
 
-#p6 .banner {
+#p6 #banner {
     background-image: url(/img/banner_doctolib.jpg);
 }
 
