@@ -21,6 +21,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .arrow {
@@ -215,6 +216,18 @@
   width: 80%;
   max-width: 500px;
   position: relative;
+}
+
+.progress-container:before, .progress-container:after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 2px solid #3f00ff;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
 }
 
 .progress-bar {
