@@ -90,16 +90,11 @@ a{
     background-color: #FFF;
     padding: 10px;
     border: none;
-    weight: 48px;
-    height: 48px;
 }
 
-#flipButton:hover{
-    background-color: #D6FF79;
-}
-
-#flipButton:active{
-    background-color: #FF9FE5;
+#flipButton img {
+    weight: 32px;
+    height: 32px;
 }
 
 .my-name {
