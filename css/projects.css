@@ -11,11 +11,26 @@ h3 {
     font-size: 32px;
 }
 
-@keyframes scrollimg {
+@keyframes scrollimg-y {
     0% {background-position: left top;}
     60% {background-position: left bottom;}
     90% {background-position: left top;}
     100% {background-position: left top;}
+}
+
+@keyframes scrollimg-x {
+    0% {background-position: left center;}
+    60% {background-position: right center;}
+    90% {background-position: left center;}
+    100% {background-position: left center;}
+}
+
+.axis-y {
+    animation: scrollimg-y;
+}
+
+.axis-x{
+    animation: scrollimg-x;
 }
 
 .banner {
@@ -23,7 +38,7 @@ h3 {
     height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: scrollimg 4s infinite;
+    animation: all 4s infinite;
 }
 
 #p1 .banner {
