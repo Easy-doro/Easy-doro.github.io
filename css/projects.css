@@ -88,7 +88,7 @@ a {
     text-transform: uppercase;
     text-align: center;
     line-height: 6px;
-    color: #FFF;
+    color: rgb(255, 255, 255, 0.5);
 }
 
 details {
@@ -100,6 +100,7 @@ details {
 
 details summary {
     cursor: pointer;
+    font-size: 28px;
 }
 
 details ul {
