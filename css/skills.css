@@ -209,4 +209,38 @@
         max-width: 50%;
         font-size: 28px;
     }
+
+    
+.progress-container {
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background-color: #3f00ff; /* Bleu foncé */
+  border-radius: 20px 0 0 20px; /* Bordures arrondies */
+  position: relative;
+}
+
+.progress::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 2px solid #3f00ff;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
 }
