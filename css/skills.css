@@ -103,6 +103,10 @@
 }
 
 @media screen and (min-width: 992px){
+    .skill-title h2 {
+        font-size: 28px;
+    }
+    
     .skill-container {
         margin-left: 5%;
     }
