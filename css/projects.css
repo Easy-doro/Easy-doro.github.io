@@ -26,11 +26,11 @@ h3 {
 }
 
 .axis-y {
-    animation: scrollimg-y;
+    animation: scrollimg-y 4s infinite;
 }
 
 .axis-x{
-    animation: scrollimg-x;
+    animation: scrollimg-x 4s infinite;
 }
 
 #banner {
@@ -38,7 +38,6 @@ h3 {
     height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: all 4s infinite;
 }
 
 #p1 #banner {
