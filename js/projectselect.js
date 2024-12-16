@@ -1,7 +1,6 @@
 const sections = ["p1", "p2", "p3", "p4", "p5", "p6"];
 const inputs = document.querySelectorAll('input[name="p"]');
 const labels = document.querySelectorAll('label');
-const banner = document.getElementById("banner");
 
 function displaySection(selectedId) {
     // 1. Afficher uniquement la section sélectionnée
@@ -11,7 +10,7 @@ function displaySection(selectedId) {
 
     // 2. Mettre à jour les labels pour ajouter/retirer la classe CSS
     labels.forEach(label => label.classList.remove("selected-project")); // Retirer la classe
-    const selectedInput = document.querySelector(`input#${selectedId}check`);
+    const selectedInput = document.querySelector(input#${selectedId}check);
     if (selectedInput) {
         const label = selectedInput.closest("label");
         if (label) label.classList.add("selected-project");
@@ -35,35 +34,6 @@ inputs.forEach(input => {
     });
 });
 
-// Fonction pour ajouter la classe "axis-x" ou "axis-y" à l'élément #banner
-function updateBannerAxisClass() {
-    if (!banner) return;
-
-    const style = getComputedStyle(banner);
-    const bgImage = style.backgroundImage;
-
-    // Extraire l'URL de l'image de fond
-    const urlMatch = bgImage.match(/url\("(.*)"\)/);
-    if (!urlMatch) return; // Pas d'image de fond trouvée
-
-    const imageUrl = urlMatch[1];
-    const img = new Image();
-
-    img.onload = function () {
-        const { naturalWidth: width, naturalHeight: height } = img;
-        // Ajouter la classe en fonction des dimensions
-        banner.classList.remove("axis-x", "axis-y");
-        if (width > height) {
-            banner.classList.add("axis-x");
-        } else {
-            banner.classList.add("axis-y");
-        }
-    };
-
-    // Charger l'image pour obtenir ses dimensions
-    img.src = imageUrl;
-}
-
 // Initialiser : vérifier au chargement si un élément est déjà sélectionné
 document.addEventListener("DOMContentLoaded", () => {
     const hasSelected = document.querySelector(".selected-project");
@@ -86,7 +56,4 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 300); // Le délai permet d'attendre que le <details> s'ouvre complètement
         });
     });
-
-    // Mettre à jour la classe du banner
-    updateBannerAxisClass();
 });
