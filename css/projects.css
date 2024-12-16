@@ -191,6 +191,7 @@ details ul li img {
     details ul {
         display: flex;
         justify-content: space-between;
+        font-size: 24px;
     }
 
     details label:hover img {
