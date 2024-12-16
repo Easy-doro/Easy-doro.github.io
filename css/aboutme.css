@@ -193,6 +193,14 @@ a{
             min-width: 650px;
             margin: 0;
         }
+
+        .about h1 {
+            font-size: 28px;
+        }
+
+        .about h3 {
+            font-size: 22px;
+        }
     
         #flipButton {
             display: none;
