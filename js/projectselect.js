@@ -10,7 +10,7 @@ function displaySection(selectedId) {
 
     // 2. Mettre à jour les labels pour ajouter/retirer la classe CSS
     labels.forEach(label => label.classList.remove("selected-project")); // Retirer la classe
-    const selectedInput = document.querySelector(input#${selectedId}check);
+    const selectedInput = document.querySelector(`input#${selectedId}check`);
     if (selectedInput) {
         const label = selectedInput.closest("label");
         if (label) label.classList.add("selected-project");
