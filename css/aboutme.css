@@ -171,6 +171,7 @@ a{
 
 .about-paragraph {
     display: none;
+    text-align: center;
     flex-direction: column;
     width: 300px;
     min-width: 250px;
