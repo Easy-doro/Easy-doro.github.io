@@ -123,9 +123,6 @@ details summary {
 }
 
 details ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: start;
     font-size: 32px;
 }
