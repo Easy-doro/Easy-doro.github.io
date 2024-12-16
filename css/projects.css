@@ -115,7 +115,7 @@ details {
 
 details summary {
     cursor: pointer;
-    font-size: 28px;
+    font-size: 32px;
 }
 
 details ul {
@@ -178,6 +178,10 @@ details ul li img {
 
     details {
         position: relative;
+    }
+
+    details summary {
+        font-size: 28px;
     }
 
     details ul {
