@@ -214,6 +214,10 @@ a{
             display: block;
         }
 
+        #emailButton {
+            font-size: 18px;
+        }
+
         #networks img {
             width: 44px;
             height: 44px;
