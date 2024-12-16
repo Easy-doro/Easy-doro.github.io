@@ -214,6 +214,11 @@ a{
             display: block;
         }
 
+        #networks img {
+            width: 44px;
+            height: 44px;
+        }
+
         #networks img:hover {
             width: 52px;
             height: 52px;
