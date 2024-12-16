@@ -171,8 +171,12 @@ details ul li img {
         margin-left: 5%;
     }
 
-    .banner {
-        animation-duration: 12s;
+    .axis-y {
+    animation: scrollimg-y 12s infinite;
+    }
+    
+    .axis-x{
+        animation: scrollimg-x 12s infinite;
     }
 
     .discoverBtn div p:first-child {
