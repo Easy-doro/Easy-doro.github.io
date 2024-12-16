@@ -175,6 +175,8 @@ a{
     width: 300px;
     min-width: 250px;
     font-size: 20px;
+    background-color: #FFF;
+    border-radius: 300px;
 }
 
 .about-paragraph a {
