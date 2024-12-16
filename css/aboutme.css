@@ -186,7 +186,7 @@ a{
 @media screen and (min-width: 992px){
         .about-container{
             align-items: center;
-            margin-left: 5%;
+            padding-left: 5%;
         }
     
         .about {
