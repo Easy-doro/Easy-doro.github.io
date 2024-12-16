@@ -144,7 +144,7 @@ details input[type="radio"]:checked + details ul li {
 details ul li label {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 24px;
     cursor: pointer;
 }
 
@@ -199,6 +199,10 @@ details ul li img {
 
     details ul li {
         width: fit-content;
+    }
+
+    details ul li label {
+        gap: 10px;
     }
 
     details ul li img {
