@@ -19,9 +19,6 @@
 
 .slider-wrapper {
     position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 
 .arrow {
@@ -50,14 +47,14 @@
     right: 24px;
 }
 
-.arrow:hover {
-    background-color: #FF9FE5;
-}
-
 .skills {
     display: flex;
     flex-wrap: nowrap;
     gap: 20px;
+}
+
+.skills::-webkit-scrollbar {
+    display: none;
 }
 
 .skill {
@@ -186,10 +183,6 @@
         scroll-snap-type: x mandatory;
         gap: 0;
         margin-top: 64px;
-    }
-
-    .skills::-webkit-scrollbar {
-        display: none;
     }
 
     .skill {
