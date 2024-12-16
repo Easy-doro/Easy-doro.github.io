@@ -195,6 +195,7 @@ a{
     
         .about {
             width: 800px;
+            height: fit-content;
             min-width: 650px;
             margin: 0;
         }
