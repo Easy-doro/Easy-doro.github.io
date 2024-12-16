@@ -13,6 +13,7 @@ a{
 .about-container{
     display: flex;
     flex-wrap: wrap;
+    background-color: #D6FF79;
     gap: 96px;
 }
 
