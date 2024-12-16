@@ -39,6 +39,11 @@
     z-index: 10;
 }
 
+.arrow img {
+    width: 32px;
+    height: 32px;
+}
+
 .left-arrow {
     left: 24px;
 }
