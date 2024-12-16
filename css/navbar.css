@@ -30,7 +30,7 @@ header{
 }
 
 .navbar span {
-    font-size: 32px;
+    font-size: 36px;
     font-family: "Harmattan";
     width: 100%;
     text-align: center;
@@ -64,6 +64,7 @@ header{
 
 .navbar label span{
     background-color: #FFF;
+    font-size: 24px;
     padding: 10px;
     border-radius: 4px;
 }
