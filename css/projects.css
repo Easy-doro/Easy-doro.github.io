@@ -196,6 +196,7 @@ details ul li label img {
 
     details ul li {
         width: fit-content;
+        margin: 0;
     }
 
     details ul li label {
@@ -203,8 +204,8 @@ details ul li label img {
     }
 
     details ul li label img {
-    width: 72px;
-    height: 72px;
+        width: 72px;
+        height: 72px;
     }
 
     details ul li label:hover img {
@@ -224,7 +225,7 @@ details ul li label img {
         position: absolute;
         z-index: 1;
         bottom: 70%;
-        transition: opacity 0.3s ease;
+        transition: opacity 0.5s ease;
     }
 
     details ul li:hover span {
