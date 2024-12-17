@@ -112,14 +112,14 @@ a {
 
 details {
     text-align: center;
-    font-size: 22px;
     cursor: default;
-    padding: 32px;
 }
 
 details summary {
     cursor: pointer;
     font-size: 36px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 details ul {
@@ -131,13 +131,14 @@ details ul li {
     background-color: #FFF;
     list-style-type: none;
     width: 82%;
+    margin: auto;
     padding: 24px;
     border-radius: 24px;
     height: fit-content;
     margin-bottom: 12px;
 }
 
-details input[type="radio"]:checked + details ul li {
+details ul li label input[type="radio"]:checked + details ul li label {
     border: solid 2px #000;
 }
 
