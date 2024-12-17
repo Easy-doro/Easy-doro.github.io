@@ -178,8 +178,12 @@ a{
     height: 420px;
     border-radius: 210px;
     background-color: #FFF;
-    min-width: 250px;
     font-size: 20px;
+    text-align: center;
+}
+
+.about-paragraph p {
+    width: 300px;
 }
 
 .about-paragraph a {
