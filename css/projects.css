@@ -137,10 +137,6 @@ details ul li {
     margin-bottom: 12px;
 }
 
-details ul li label input[type="radio"]:checked + details ul li label {
-    border: solid 2px #000;
-}
-
 details ul li label {
     display: flex;
     align-items: center;
@@ -159,7 +155,7 @@ details input[type="radio"] {
     font-weight: bold;
 }
 
-details ul li img {
+details ul li label img {
     width: 128px;
     height: 128px;
     cursor: pointer;
@@ -194,6 +190,7 @@ details ul li img {
 
     details ul {
         display: flex;
+        align-items: center;
         justify-content: space-between;
     }
 
@@ -205,17 +202,17 @@ details ul li img {
         gap: 10px;
     }
 
-    details ul li img {
+    details ul li label img {
     width: 72px;
     height: 72px;
     }
 
-    details label:hover img {
+    details ul li label:hover img {
         width: 86px;
         height: 86px;
     }
 
-    details li span {
+    details ul li span {
         opacity: 0;
         font-size: 24px;
         width: 120px;
@@ -230,7 +227,7 @@ details ul li img {
         transition: opacity 0.3s ease;
     }
 
-    li:hover span {
+    details ul li:hover span {
         opacity: 1;
     }
 }
