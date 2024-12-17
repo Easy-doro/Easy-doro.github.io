@@ -174,7 +174,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 420px;
     height: 420px;
     background-color: #FFF;
     min-width: 250px;
@@ -219,7 +219,7 @@ a{
         }
     
         .about-paragraph {
-            display: block;
+            display: flex;
         }
 
         #emailButton {
