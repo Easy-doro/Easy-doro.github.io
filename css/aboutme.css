@@ -53,6 +53,7 @@ a{
     gap: 40px;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
 }
 
 #flip-card-front h3 {
@@ -72,6 +73,7 @@ a{
     border: solid #000 2px;
     backface-visibility: hidden;
     transform: rotateY(180deg);
+    overflow: scroll;
 }
 
 #flip-card-back p {
@@ -180,6 +182,7 @@ a{
     background-color: #FFF;
     font-size: 20px;
     text-align: center;
+    overflow: scroll;
 }
 
 .about-paragraph p {
