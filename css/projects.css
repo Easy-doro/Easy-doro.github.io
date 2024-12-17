@@ -118,8 +118,6 @@ details {
 details summary {
     cursor: pointer;
     font-size: 36px;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 details ul {
