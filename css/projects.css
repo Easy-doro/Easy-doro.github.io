@@ -113,6 +113,7 @@ a {
 details {
     text-align: center;
     cursor: default;
+    padding: 32px;
 }
 
 details summary {
