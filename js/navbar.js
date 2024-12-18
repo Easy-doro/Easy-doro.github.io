@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
 // Sélectionner tous les boutons radio
 const radioButtons = document.querySelectorAll(".navbar input[type='radio']");
