@@ -1,0 +1,25 @@
+@import url(font.css);
+
+body{
+    background-color: #F8F8F8;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+section{
+    margin-bottom: 64px;
+}
+
+h1, h2 {
+    font-family: "Josefin Sans";
+    font-weight: 800;
+}
+
+h3, h4, h5 p {
+    font-family: "Josefin Sans";
+    font-weight: normal;
+}
+
+button {
+    font-family: "B612";
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Vladimir Bleskine - Portfolio</title>
+    <base href="/">
+    <link rel="icon" type="image/png" href="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/myproject.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <label>
+          <input type="radio" name="nav" data-url="index.html">
+          <span>Portfolio</span>
+        </label>
+        <label>
+            <input type="radio" name="nav" data-url="projects.html" checked>
+            <span>Projects</span>
+        </label>
+        <label>
+          <input type="radio" name="nav" data-url="aboutme.html">
+          <span>About Me</span>
+        </label>
+      </div>
+      <script src="js/navbar.js"></script>
+  </header>
+  <main>
+    <div class="title">
+      <h1>Open Days</h1>
+      <h3>2024</h3>
+      <img src="/img/projects/.banner/banner_opendays.png" alt="">
+      <h2>Objectifs</h2>
+      <p>Pour préparer les portes ouvertes de l’école, nous avions une semaine banalisée pour travailler sur des travaux en groupe. Mon groupe comptait 4 personnes, nous avions pour objectif de réaliser un plan 3D de l’école afin de présenter les différents ateliers des portes ouvertes.</p>
+    </div>
+    <div>
+      <h2>Répartition des tâches</h2>
+      <p>Pour aborder ce problème, nous avons dans un premier temps accumulé un maximum de références des différentes salles avec des photos dans différents angles et en utilisant les plans d’évacuations.</p>
+      <p>Pour la modélisation, nous avons choisi Blender pour son accessibilité qui nous permettait de tous travailler sur le même logiciel.</p>
+      <p>De mon côté, j’ai modélisé 3 des salles de classe :</p>
+    </div>
+    <div class="minia">
+      <div>
+        <img src="/img/projects/open_days/2.2_render.jpg" alt="">
+        <img src="/img/projects/open_days/2.2_ref.jpg" alt="">
+        <p>Salle 2.2</p>
+      </div>
+      <div>
+        <img src="/img/projects/open_days/atelier_render.jpg" alt="">
+        <img src="/img/projects/open_days/atelier_ref.jpg" alt="">
+        <p>Atelier</p>
+      </div>
+      <div>
+        <img src="/img/projects/open_days/chapelle_render.jpg" alt="">
+        <img src="/img/projects/open_days/chapelle_ref.jpg" alt="">
+        <p>Chapelle</p>
+      </div>
+    </div>
+    <div>
+      <h2>Ajout d’un sélecteur de pièces</h2>
+      <p>J’ai ensuite importé la scène dans Unreal Engine où j’ai placer mes caméras et mes lumières en essayant de mettre en valeurs chaque pièce.</p>
+      <p>Avec des blueprint, j’ai pu programmer un sélecteur de pièces qui transite d’une caméra à l’autre grâce à un menu de sélection.</p>
+    </div>
+    <div class="logoanim">
+      <h2>3D animation of the Open Days logo</h2>
+      <p>Comme il nous restait un peu de temps durant la semaine banalisée, j’ai pû reprendre l’affiche des JPO 2024 pour en faire une version animée en 3D</p>
+      <img src="/img/projects/open_days/logo.jpg" alt="">
+      <img src="/img/projects/open_days/logo_anim.gif" alt="">
+    </div>
+  </main>
+</body>
+</html>

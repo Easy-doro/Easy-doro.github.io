@@ -1,0 +1,246 @@
+.about h1 {
+    font-size: 48px;
+}
+
+.about h3 {
+    font-size: 32px;
+}
+
+a{
+    color: #F500B4;
+}
+
+.about-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #D6FF79;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    gap: 96px;
+}
+
+.about{
+    position: relative;
+    margin: auto;
+    width: 82%;
+    min-width: 420px;
+    height: 530px;
+    box-shadow: 16px 16px #333;
+}
+
+#drop-shadow-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.flip-the-box{
+    transform: rotateY(180deg);
+}
+
+#flip-card-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: solid #000 2px;
+    backface-visibility: hidden;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+#flip-card-front h3 {
+    color: #624763;
+}
+
+
+#flip-card-front h3:hover {
+    color: #F500B4;
+}
+
+#flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    border: solid #000 2px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    overflow: scroll;
+}
+
+#flip-card-back p {
+    font-size: 24px;
+}
+
+#flip-card-back div{
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    gap: 40px;
+}
+
+#flipButton{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    background-color: #FFF;
+    padding: 10px;
+    border: none;
+}
+
+#flipButton img {
+    width: 64px;
+    height: 64px;
+}
+
+.my-name {
+    gap: 20px;
+}
+
+#emailButton {
+    border: solid 2px #000;
+    color: #000;
+    background-color: #D6FF79;
+    font-size: 20px;
+    border-radius: 24px;
+    width: 300px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.8s ease;
+}
+
+#emailButton::before {
+    content: attr(data-email);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+#emailButton:hover::before {
+    content: "Copy mail";
+}
+
+#emailButton:active::before {
+    content: "Copy mail ✔";
+}
+
+#emailButton:active {
+    background-color: #FF9FE5;
+    cursor: progress;
+}
+
+#networks img {
+    width: 86px;
+    height: 86px;
+    transition: all 0.2s ease;
+}
+
+#networks {
+    display: flex;
+    gap: 40px;
+}
+
+#my-photo{
+    width: 256px;
+    height: 256px;
+    border-radius: 128px;
+    background-image: url(/img/myphoto.gif);
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
+.about-paragraph {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    height: 420px;
+    border-radius: 210px;
+    background-color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    overflow: scroll;
+}
+
+.about-paragraph p {
+    width: 300px;
+}
+
+.about-paragraph a {
+    color:#624763;
+}
+
+.about-paragraph a:hover {
+    color: #F500B4;
+}
+
+@media screen and (min-width: 992px){
+        .about-container{
+            align-items: center;
+            padding-left: 5%;
+        }
+    
+        .about {
+            width: 800px;
+            height: 420px;
+            min-width: 650px;
+            margin: 0;
+        }
+
+        .about h1 {
+            font-size: 28px;
+        }
+
+        .about h3 {
+            font-size: 22px;
+        }
+    
+        #flipButton {
+            display: none;
+        }
+    
+        #my-photo{
+            display: block;
+        }
+    
+        .about-paragraph {
+            display: flex;
+        }
+
+        #emailButton {
+            font-size: 18px;
+        }
+
+        #networks img {
+            width: 44px;
+            height: 44px;
+        }
+
+        #networks img:hover {
+            width: 52px;
+            height: 52px;
+        }
+}
