@@ -60,3 +60,24 @@ body {
 .logoanim img {
     height: 512px;
 }
+
+
+.chara-design img {
+    height: 512px;
+}
+
+.chara-design div {
+    display: flex;
+}
+
+.gameplay img {
+    height: 512px;
+}
+
+.anim img {
+    height: 256px;
+}
+
+.level-design img{
+    height: 256px;
+}
